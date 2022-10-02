@@ -1,0 +1,115 @@
+.header {
+    height: 175px;    
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    font-size: 100px;
+    margin: 0px;
+    text-align: center;
+}
+
+.headlineGrey{
+    color: rgb(204, 204, 204);
+}
+
+.headlineBlack{
+    color: black;
+}
+
+.headerHome{
+    margin-bottom: 100px;
+    background-color: black;
+
+}
+
+.columnLink{
+    text-decoration: none;
+}
+
+.h2{
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.h2Black{
+    color: black;
+}
+
+.h2White{
+    color: white;
+}
+
+.h3{
+    font-size: 35px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.row{
+    position: relative;
+    width: 60%;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 50%;
+    padding: 10px;
+
+}
+
+.columnWhite{
+    background-color: white;
+}
+
+.columnBlack{
+    background-color: black;
+}
+
+
+.columnWhite:hover{
+    background-color:rgb(214, 214, 214);
+}
+
+.columnBlack:hover{
+    background-color:rgb(35, 35, 35);
+}
+
+.homepage{
+    margin: 0;
+    background-color: white(222, 225, 228);
+}
+
+.picture{
+    border-radius: 100%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.textBlack{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.textWhite{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
