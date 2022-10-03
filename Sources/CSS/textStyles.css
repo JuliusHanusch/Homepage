@@ -1,0 +1,75 @@
+.headline{
+    font-size: 100px;
+    margin: 0px;
+    text-align: center;
+}
+
+.headlineGrey{
+    color: rgb(204, 204, 204);
+}
+
+.headlineBlack{
+    color: black;
+}
+
+.h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.h2Black{
+    color: black;
+}
+
+.h2White{
+    color: white;
+}
+
+.h3{
+    font-size: 35px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textBlack{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.textWhite{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.text{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.textLink{
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+.link{
+    font-size: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(204, 204, 204);}
+
+header .link:hover{
+    color: white;   
+}
+
+.columnLink{
+    text-decoration: none;
+    flex: 25%;
+}
+
