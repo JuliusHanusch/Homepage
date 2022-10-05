@@ -16,7 +16,6 @@
     width: 60%;
     left: 20%;
     height: inherit;
-    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -54,7 +53,8 @@
 
 .textRow{
     width: 100%;
-    display: flex; 
+    display: flex;
+    margin-top: 5px;
 }
 
 .textBoxLeft{
