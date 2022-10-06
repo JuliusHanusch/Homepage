@@ -22,11 +22,12 @@
 .row{
     display: flex;
     position: relative;
+
 }
 
 .rowHomepage{
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
     margin-bottom: 100px;
 }
 
