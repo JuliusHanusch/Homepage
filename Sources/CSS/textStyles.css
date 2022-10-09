@@ -64,7 +64,8 @@
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
-    color: rgb(204, 204, 204);}
+    
+}
 
 header .link:hover{
     color: white;   

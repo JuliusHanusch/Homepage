@@ -29,5 +29,16 @@
     background-color: white(222, 225, 228);
 }
 
+.linkHeader{
+    color: rgb(204, 204, 204);
+}
+
+.linkBlack{
+    color: black;
+}
+.textCenter{
+    text-align: center;
+}
+
 
 
