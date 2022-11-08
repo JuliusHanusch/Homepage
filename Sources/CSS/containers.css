@@ -22,17 +22,9 @@
 .row{
     display: flex;
     position: relative;
-
-}
-
-.rowHomepage{
     width: 60%;
     left: 20%;
-}
 
-.rowIndididual{
-    width: 60%;
-    left: 20%;
 }
 
 .column{
@@ -41,6 +33,11 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.columnLink{
+    text-decoration: none;
+    flex: 25%;
 }
 
 .textColumn{
@@ -90,5 +87,38 @@
     margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 800px) {
+    .row{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        left: 10%;
+    }
+
+    .columnLink{
+        text-decoration: none;
+        flex: 100%;
+    }
+
+    .top{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        height: inherit;
+        margin-top: 50px;
+    }
+
+    .textColumn{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+   
+}
 
 

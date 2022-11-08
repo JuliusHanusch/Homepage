@@ -64,15 +64,11 @@
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
-    
 }
 
 header .link:hover{
     color: white;   
 }
 
-.columnLink{
-    text-decoration: none;
-    flex: 25%;
-}
+
 
