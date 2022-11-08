@@ -1,3 +1,4 @@
+# File for automatic SFTP deployment
 name: CI-SFTP
  
 # Controls when the action will run. 
