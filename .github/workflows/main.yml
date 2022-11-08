@@ -28,6 +28,7 @@ jobs:
           server: ssh.strato.de
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: '$SFTP_PASSWORD'
  
           
           # will put all file under this path
