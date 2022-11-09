@@ -16,7 +16,7 @@
     width: 60%;
     left: 20%;
     height: inherit;
-    margin-top: 50px;
+    margin-top: calc(10px + 3vw);
 }
 
 .row{
