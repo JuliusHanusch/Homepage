@@ -11,7 +11,7 @@
         <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Internal Area</p>
         </header>
-        <div>
+        <div class="">
             <form action="/action_page.php">
                 <label for="message">Message:</label>
                 <input type="text" id="message" name="message">
