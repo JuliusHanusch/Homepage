@@ -3,16 +3,15 @@
     <head>
         <title>Julius Hanusch</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/containers.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/colorsAndDesign.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/textStyles.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.css">
     </head>
     <body class="style">
         <header class="header colorJulius" >
-            <a class="link linkHeader" href="../index.html">Homepage</a>
-            <!-- <a class="link" href="C:\Users\juliu\Documents\Homepage\Templates\hanuschs_thomas.html">Thomas</a> -->
-            <a class="link linkHeader" href="comingSoon.html">Olivia</a>
-            <a class="link linkHeader" href="cornelius.html">Cornelius</a>
+            <a class="link linkHeader" href="../../index.php">Homepage</a>
+            <a class="link linkHeader" href="../comingSoon.php">Olivia</a>
+            <a class="link linkHeader" href="cornelius.php">Cornelius</a>
         </header>
         <div class="top">
             <p class="headline headlineBlack">Julius Hanusch</p>
@@ -22,7 +21,6 @@
             </p>
         </div>
         <div class="row">
-            <!-- <img class="pictureIndividual" src="C:\Users\juliu\Documents\Hanuschs\Sources\Pictures\JuliusHanusch.jpeg" alt="Julius Hanuschs Profilbild"/> -->
             <div class="textColumn">
                 <p class="h2 h2Black">Personal Data</p>
                     <p class="h3">Contact</p>

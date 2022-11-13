@@ -14,7 +14,7 @@
         </header>
 
         <div class="row">
-            <a class="columnLink" href="Templates/julius.html">
+            <a class="columnLink" href="Templates/PersonalSites/julius.php">
                 <div class="column colorBlack">
                     <img class="picture" src="Sources/Pictures/JuliusBlack.png" alt="Julius Hanusch Profilbild"/>
                     <p class="h2 h2White">Julius Hanusch</p>
@@ -22,14 +22,7 @@
                 </div>
             </a>
         
-            <!-- <a class="columnLink" href="C:\Users\juliu\Documents\Homepage\Templates\hanuschs_thomas.html">
-                <div class="column colorBlack">
-                    <img class="picture" src="C:\Users\juliu\Documents\Homepage\Sources\Pictures\Julius.jpeg" alt="Julius Hanusch Profilbild"/>
-                    <p class="h2 h2White">Thomas Hanusch</p>
-                    <p class="textWhite">Graduate engineer at Melexis.</p>
-                </div>
-            </a> -->
-            <a class="columnLink" href="Templates/comingSoon.html">
+            <a class="columnLink" href="Templates/comingSoon.php">
                 <div class="column colorWhite">
                     <img class="picture" src="Sources/Pictures/OliviaWhite.jpeg" alt="Olivia Hanusch Profilbild"/>
                     <p class="h2 h2Black">Olivia Hanusch</p>
@@ -37,7 +30,7 @@
                 </div>
             </a>
         
-            <a class="columnLink" href="Templates/cornelius.html">
+            <a class="columnLink" href="Templates/PersonalSites/cornelius.php">
                 <div class="column colorBlack">
                     <img class="picture" src="Sources/Pictures/HanuschCorneliusBlack.jpg" alt="Cornelius Hanusch Profilbild"/>
                     <p class="h2 h2White">Cornelius Hanusch</p>
@@ -48,7 +41,7 @@
  
     </body>
     <footer class="footer colorHome">
-        <a class="link linkHeader" href="Templates/intern.html">Intern</a>
+        <a class="link linkHeader" href="Templates/InternalArea/login.php">Intern</a>
 
     </footer>
 </html>
