@@ -15,7 +15,7 @@
 
         <div>
             <h2>Login</h2>
-            <form action="login.inc.php" method="post">
+            <form action="../Includes/login.inc.php" method="post">
                 <input type="text" name="Username" placeholder="Username">
                 <input type="text" name="Password" placeholder="Password">
                 <button type="submit" name="submit">Log In</button>

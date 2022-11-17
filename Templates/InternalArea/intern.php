@@ -11,16 +11,29 @@
         <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Internal Area</p>
         </header>
-        <div class="">
-            <form action="/action_page.php">
-                <input type="text" id="message" name="message">
+        <!-- <div class="">
+            <form action="../Includes/newContent.inc.php method="post"">
+                <input type="text" name="message">
                 <br>
-                <input type="text" id="content" name="content">
+                <input type="text" name="content">
                 <br>
                 <input type="submit" value="Submit">
             </form>
-            
-
+        
+        </div> -->
+        <div>
+            <form action="../Includes/createUser.inc.php" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                <input type="text" name="uid" placeholder="Username">
+                <br>
+                <input type="text" name="pwd" placeholder="Password">
+                <br>
+                <input type="text" name="pwdrepeat" placeholder="Repeat Password">
+                <br>
+                <button type="submit" name="submit">Create User</button>
+            </form>
+        
         </div>
 
 
@@ -28,7 +41,7 @@
 
 
         <footer class="footer colorHome">
-            <a class="link linkHeader" href="../index.php">Homepage</a>
+            <a class="link linkHeader" href="../../index.php">Logout</a>
         </footer>
 
     </body>
