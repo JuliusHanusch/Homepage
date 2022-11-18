@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +13,12 @@
     </head>
     <body class="style">
         <header class="header colorHome headerHome">
-            <p class="headline headlineGrey">Internal Area</p>
+        <a class="link linkHeader" href="../../index.php">Homepage</a>
+        <a class="link linkHeader" href="../PersonalSites/julius.php">Julius</a>
+        <a class="link linkHeader" href="../comingSoon.php">Olivia</a>
+        <a class="link linkHeader" href="../PersonalSites/cornelius.php">Cornelius</a>
+        <a class="link linkHeader" href="../Includes/logout.inc.php?curentSite=julius">Logout</a>
+
         </header>
         <!-- <div class="">
             <form action="../Includes/newContent.inc.php method="post"">
@@ -33,15 +42,38 @@
                 <br>
                 <button type="submit" name="submit">Create User</button>
             </form>
-        
         </div>
+
+        <?php
+            if(isset($_GET["error"])){
+                if($_GET["error"] == "emptyinput"){
+                    echo "<p>Please fill in all fields!<p>";
+                }
+                elseif($_GET["error"] == "invaliduiid"){
+                    echo "<p>Choose proper username!<p>";
+                }
+                elseif($_GET["error"] == "passwordmatch"){
+                    echo "<p>Passwords doesn't match!<p>";
+                }
+                elseif($_GET["error"] == "stmtfailed"){
+                    echo "<p>Unexpected error, please try again!<p>";
+                }
+                elseif($_GET["error"] == "usernametaken"){
+                    echo "<p>Username aready taken, please choose another one!<p>";
+                }
+                elseif($_GET["error"] == "none"){
+                    echo "<p>New user Successfull created!<p>";
+                }
+                
+            }
+        ?>
 
 
 
 
 
         <footer class="footer colorHome">
-            <a class="link linkHeader" href="../../index.php">Logout</a>
+            <a class='link linkHeader' href='intern.php'>Intern</a>
         </footer>
 
     </body>

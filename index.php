@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,7 +45,14 @@
  
     </body>
     <footer class="footer colorHome">
-        <a class="link linkHeader" href="Templates/InternalArea/login.php">Intern</a>
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='Templates/InternalArea/intern.php'>Intern</a>";
+            }
+            else{
+                echo "<a class='link linkHeader' href='Templates/InternalArea/login.php'>Intern</a>";
+            }
+        ?>
 
     </footer>
 </html>

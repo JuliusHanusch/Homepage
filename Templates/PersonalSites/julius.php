@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +17,11 @@
             <a class="link linkHeader" href="../../index.php">Homepage</a>
             <a class="link linkHeader" href="../comingSoon.php">Olivia</a>
             <a class="link linkHeader" href="cornelius.php">Cornelius</a>
+            <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='../Includes/logout.inc.php?currentSite=julius'>Logout</a>";
+            }
+            ?>
         </header>
         <div class="top">
             <p class="headline headlineBlack">Julius Hanusch</p>
@@ -111,6 +121,13 @@
         </div>
     </body>
     <footer class="footer colorJulius">
-
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='../InternalArea/intern.php'>Intern</a>";
+            }
+            else{
+                echo "<a class='link linkHeader' href='../InternalArea/login.php'>Intern</a>";
+            }
+         ?>
     </footer>
 </html>
