@@ -16,13 +16,8 @@
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
 
-<<<<<<< HEAD:index.html
-        <div class="row rowHomepage">
-            <a class="columnLink" href="Templates/julius.html">
-=======
         <div class="row">
             <a class="columnLink" href="Templates/PersonalSites/julius.php">
->>>>>>> develop:index.php
                 <div class="column colorBlack">
                     <img class="picture" src="Sources/Pictures/JuliusBlack.png" alt="Julius Hanusch Profilbild"/>
                     <p class="h2 h2White">Julius Hanusch</p>
