@@ -40,6 +40,10 @@
                 <br>
                 <input type="text" name="pwdrepeat" placeholder="Repeat Password">
                 <br>
+                <select name="role" placeholder="Role">
+                    <option value="Member">Member</option>
+                </select>
+                <br>
                 <button type="submit" name="submit">Create User</button>
             </form>
         </div>
@@ -62,7 +66,7 @@
                     echo "<p>Username aready taken, please choose another one!<p>";
                 }
                 elseif($_GET["error"] == "none"){
-                    echo "<p>New user Successfull created!<p>";
+                    echo "<p>New user created!<p>";
                 }
                 
             }

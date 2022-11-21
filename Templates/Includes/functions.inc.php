@@ -60,8 +60,8 @@ function uidExists($conn, $username){
     mysqli_stmt_close($stmt);
 }
 
-function createUser($conn, $name, $username, $pwd){
-    $sql = "INSERT INTO users (usersName, usersUid, usersPwd) VALUES (?, ?, ?);";
+function createUser($conn, $name, $username, $pwd, $role){
+    $sql = "INSERT INTO users (usersName, usersUid, usersPwd, usersRole) VALUES (?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
         header("location: ../InternalArea/intern.php?error=usernametaken");
@@ -70,7 +70,7 @@ function createUser($conn, $name, $username, $pwd){
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "sss", $name, $username, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $hashedPwd, $role);
     mysqli_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../InternalArea/intern.php?error=none");
@@ -109,6 +109,7 @@ function loginUser($conn, $username, $pwd){
         session_start();
         $_SESSION["userid"] = $uidExists["usersId"];
         $_SESSION["useruid"] = $uidExists["usersUid"];
+        $_SESSION["userrole"] = $uidExists["usersRole"];
         header("location: ../InternalArea/intern.php?error=none");
         exit();
     }
