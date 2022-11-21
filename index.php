@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,12 +12,17 @@
 
     </head>
     <body class="style">
-        <header class="header headerHome">
+        <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
 
+<<<<<<< HEAD:index.html
         <div class="row rowHomepage">
             <a class="columnLink" href="Templates/julius.html">
+=======
+        <div class="row">
+            <a class="columnLink" href="Templates/PersonalSites/julius.php">
+>>>>>>> develop:index.php
                 <div class="column colorBlack">
                     <img class="picture" src="Sources/Pictures/JuliusBlack.png" alt="Julius Hanusch Profilbild"/>
                     <p class="h2 h2White">Julius Hanusch</p>
@@ -21,14 +30,7 @@
                 </div>
             </a>
         
-            <!-- <a class="columnLink" href="C:\Users\juliu\Documents\Homepage\Templates\hanuschs_thomas.html">
-                <div class="column colorBlack">
-                    <img class="picture" src="C:\Users\juliu\Documents\Homepage\Sources\Pictures\Julius.jpeg" alt="Julius Hanusch Profilbild"/>
-                    <p class="h2 h2White">Thomas Hanusch</p>
-                    <p class="textWhite">Graduate engineer at Melexis.</p>
-                </div>
-            </a> -->
-            <a class="columnLink" href="Templates/comingSoon.html">
+            <a class="columnLink" href="Templates/comingSoon.php">
                 <div class="column colorWhite">
                     <img class="picture" src="Sources/Pictures/OliviaWhite.jpeg" alt="Olivia Hanusch Profilbild"/>
                     <p class="h2 h2Black">Olivia Hanusch</p>
@@ -36,7 +38,7 @@
                 </div>
             </a>
         
-            <a class="columnLink" href="Templates/cornelius.html">
+            <a class="columnLink" href="Templates/PersonalSites/cornelius.php">
                 <div class="column colorBlack">
                     <img class="picture" src="Sources/Pictures/HanuschCorneliusBlack.jpg" alt="Cornelius Hanusch Profilbild"/>
                     <p class="h2 h2White">Cornelius Hanusch</p>
@@ -46,7 +48,15 @@
         </div>
  
     </body>
-    <footer class="footer colorBlack">
+    <footer class="footer colorHome">
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='Templates/InternalArea/intern.php'>Intern</a>";
+            }
+            else{
+                echo "<a class='link linkHeader' href='Templates/InternalArea/login.php'>Intern</a>";
+            }
+        ?>
 
     </footer>
 </html>
