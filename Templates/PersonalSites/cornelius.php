@@ -1,19 +1,28 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Cornelius Hanusch</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/containers.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/colorsAndDesign.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/textStyles.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.css">
 
     </head>
     <body class="style">
         <header class="header colorCornelius" >
-            <a class="link linkHeader" href="../index.html">Homepage</a>
-            <a class="link linkHeader" href="julius.html">Julius</a>
-            <!-- <a class="link" href="C:\Users\juliu\Documents\Homepage\Templates\hanuschs_thomas.html">Thomas</a> -->
-            <a class="link linkHeader" href="comingSoon.html">Olivia</a>
+            <a class="link linkHeader" href="../../index.php">Homepage</a>
+            <a class="link linkHeader" href="julius.php">Julius</a>
+            <a class="link linkHeader" href="../comingSoon.php">Olivia</a>
+            <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='../Includes/logout.inc.php?currentSite=cornelius'>Logout</a>";
+            }
+            ?>
         </header>
         <div class="top">
             <p class="headline headlineBlack">Cornelius Hanusch</p>
@@ -24,7 +33,6 @@
             </p>
         </div>
         <div class="row">
-            <!-- <img class="pictureIndividual" src="C:\Users\juliu\Documents\Hanuschs\Sources\Pictures\JuliusHanusch.jpeg" alt="Julius Hanuschs Profilbild"/> -->
             <div class="textColumn">
                 <p class="h2 h2Black">Personal Data</p>
                     <p class="h3">Contact</p>
@@ -104,6 +112,13 @@
         </div>
     </body>
     <footer class="footer colorCornelius">
-
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='../InternalArea/intern.php'>Intern</a>";
+            }
+            else{
+                echo "<a class='link linkHeader' href='../InternalArea/login.php'>Intern</a>";
+            }
+        ?>
     </footer>
 </html>

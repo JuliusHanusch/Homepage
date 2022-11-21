@@ -1,19 +1,23 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Olivia Hanusch</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/containers.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/colorsAndDesign.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/textStyles.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.php">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.php">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.php">
 
     </head>
     <body class="style">
         <header class="header colorOlivia" >
-            <a class="link linkHeader" href="../index.html">Homepage</a>
+            <a class="link linkHeader" href="../../index.html">Homepage</a>
             <a class="link linkHeader" href="julius.html">Julius</a>
-            <!-- <a class="link" href="C:\Users\juliu\Documents\Homepage\Templates\hanuschs_thomas.html">Thomas</a> -->
-            <a class="link linkHeader" href="comingSoon.html">Cornelius</a>
+            <a class="link linkHeader" href="../comingSoon.html">Cornelius</a>
         </header>
         <div class="top">
             <p class="headline headlineBlack">Olivia Hanusch</p>
@@ -22,7 +26,6 @@
            </p>
         </div>
         <div class="row">
-            <!-- <img class="pictureIndividual" src="C:\Users\juliu\Documents\Hanuschs\Sources\Pictures\JuliusHanusch.jpeg" alt="Julius Hanuschs Profilbild"/> -->
             <div class="textColumn">
                 <p class="h2 h2Black">Personal Data</p>
                 <!-- <p class="h3">Contact</p>
@@ -96,6 +99,13 @@
         </div>
     </body>
     <footer class="footer colorOlivia">
-
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a class='link linkHeader' href='Templates/InternalArea/intern.php'>Intern</a>";
+            }
+            else{
+                echo "<a class='link linkHeader' href='Templates/InternalArea/login.php'>Intern</a>";
+            }
+        ?>
     </footer>
 </html>

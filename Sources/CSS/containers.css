@@ -8,7 +8,6 @@
 
 .headerHome{
     margin-bottom: 100px;
-    background-color: black;
 }
 
 .top{
@@ -85,6 +84,9 @@
     bottom: 0%;
     position: relative;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
