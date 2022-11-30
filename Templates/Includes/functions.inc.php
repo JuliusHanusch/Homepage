@@ -92,20 +92,23 @@ function emptyInputLogin($username, $pwd){
 function loginUser($conn, $username, $pwd){
     $uidExists = uidExists($conn, $username);
 
+
     if($uidExists === false){
         header("location: ../InternalArea/login.php?error=wronglogin");
         exit();
     }
 
+
     $pwdHashed = $uidExists["usersPwd"];
     $checkPwd = password_verify($pwd, $pwdHashed);
+
 
     if($checkPwd === false){
         header("location: ../InternalArea/login.php?error=wronglogin");
         exit();
     }
 
-    else if ($checkPwd === true) {
+    elseif ($checkPwd === true) {
         session_start();
         $_SESSION["userid"] = $uidExists["usersId"];
         $_SESSION["useruid"] = $uidExists["usersUid"];

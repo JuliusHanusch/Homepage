@@ -2,7 +2,6 @@
 
 if (isset($_POST["submit"])){
 
-    echo "it works";
 
     $name = $_POST["name"];
     $username = $_POST["uid"];
@@ -32,6 +31,7 @@ if (isset($_POST["submit"])){
         header("location: ../InternalArea/intern.php?error=usernametaken");
         exit();
     }
+
 
     createUser($conn, $name, $username, $pwd, $role);
 

@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>ComingSoon</title>
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/containers.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/colorsAndDesign.css">
-        <link rel="stylesheet" type="text/css" href="../Sources/CSS/textStyles.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.css">
 
     </head>
     <body class="style">
