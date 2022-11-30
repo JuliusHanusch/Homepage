@@ -3,7 +3,7 @@
     <head>
         <title>Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/comtainers.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.css">
         <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.css">
         <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.css">
 
@@ -14,12 +14,16 @@
         </header>
 
         <div class="row">
-            <h2>Login</h2>
-            <form action="../Includes/login.inc.php" method="post">
-                <input type="text" name="uid" placeholder="Username">
-                <input type="text" name="pwd" placeholder="Password">
-                <button type="submit" name="submit">Log In</button>
-            </form>
+            <div class="loginBox">
+                <p class="h2">Login</p>
+                <form action="../Includes/login.inc.php" method="post">
+                    <input type="text" name="uid" placeholder="Username">
+                    <br>
+                    <input type="text" name="pwd" placeholder="Password">
+                    <br>
+                    <button type="submit" name="submit">Log In</button>
+                </form>
+            </div>
         </div>
 
         <?php
