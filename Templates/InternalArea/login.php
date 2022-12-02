@@ -13,7 +13,7 @@
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
         <div class="rowLogin">
-            <div class="boxStandart boxLogin">
+            <div class="boxStandart">
                 <p class="h2">Login</p>
                 <form class="formStandart" action="../Includes/login.inc.php" method="post">
                     <input type="text" name="uid" placeholder="Username">

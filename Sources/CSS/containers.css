@@ -26,7 +26,7 @@
 
 }
 
-.rowLogin{
+.rowFields{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +77,6 @@
     height: max-content;
 
 }
-
 
 .formStandart{
     display: flex;

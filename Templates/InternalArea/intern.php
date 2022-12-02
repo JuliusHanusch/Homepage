@@ -34,50 +34,46 @@
         <?php
             if($_SESSION["userrole"] == 'admin'){
                 echo 
-                    "<div>
-                        <form action='../Includes/createUser.inc.php' method='post'>
-                            <input type='text' name='name' placeholder='Name'>
-                            <br>
-                            <input type='text' name='uid' placeholder='Username'>
-                            <br>
-                            <input type='text' name='pwd' placeholder='Password'>
-                            <br>
-                            <input type='text' name='pwdrepeat' placeholder='Repeat Password'>
-                            <br>
-                            <select name='role' placeholder='Role'>
-                                <option value='Member'>Member</option>
-                            </select>
-                            <br>
-                            <button type='submit' name='submit'>Create User</button>
-                        </form>
-                    </div>";
-            
-            }
+                    "<div class='rowFields'>
+                        <div class='boxStandart'>
+                            <form class='formStandart' action='../Includes/createUser.inc.php' method='post'>
+                                <input type='text' name='name' placeholder='Name'>
+                                <input type='text' name='uid' placeholder='Username'>
+                                <input type='text' name='pwd' placeholder='Password'>
+                                <input type='text' name='pwdrepeat' placeholder='Repeat Password'>
+                                <br>
+                                <select name='role' placeholder='Role'>
+                                    <option value='member'>Member</option>
+                                    <option value='admin'>admin</option>
+                                </select>
+                                <button class='buttorn' type='submit' name='submit'>Create User</button>
+                            </form>
+                        </div>
+                    </div>";}
+
+                    if(isset($_GET["error"])){
+                        if($_GET["error"] == "emptyinput"){
+                            echo "<p>Please fill in all fields!<p>";
+                        }
+                        elseif($_GET["error"] == "invaliduiid"){
+                            echo "<p>Choose proper username!<p>";
+                        }
+                        elseif($_GET["error"] == "passwordmatch"){
+                            echo "<p>Passwords doesn't match!<p>";
+                        }
+                        elseif($_GET["error"] == "stmtfailed"){
+                            echo "<p>Unexpected error, please try again!<p>";
+                        }
+                        elseif($_GET["error"] == "usernametaken"){
+                            echo "<p>Username aready taken, please choose another one!<p>";
+                        }
+                        elseif($_GET["error"] == "none"){
+                            echo "<p>New user created!<p>";
+                        }
+                        
+                    }
         ?>
 
-        <?php
-            if(isset($_GET["error"])){
-                if($_GET["error"] == "emptyinput"){
-                    echo "<p>Please fill in all fields!<p>";
-                }
-                elseif($_GET["error"] == "invaliduiid"){
-                    echo "<p>Choose proper username!<p>";
-                }
-                elseif($_GET["error"] == "passwordmatch"){
-                    echo "<p>Passwords doesn't match!<p>";
-                }
-                elseif($_GET["error"] == "stmtfailed"){
-                    echo "<p>Unexpected error, please try again!<p>";
-                }
-                elseif($_GET["error"] == "usernametaken"){
-                    echo "<p>Username aready taken, please choose another one!<p>";
-                }
-                elseif($_GET["error"] == "none"){
-                    echo "<p>New user created!<p>";
-                }
-                
-            }
-        ?>
 
 
 
