@@ -3,7 +3,7 @@
     <head>
         <title>Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/comtainers.css">
+        <link rel="stylesheet" type="text/css" href="../../Sources/CSS/containers.css">
         <link rel="stylesheet" type="text/css" href="../../Sources/CSS/colorsAndDesign.css">
         <link rel="stylesheet" type="text/css" href="../../Sources/CSS/textStyles.css">
 
@@ -12,14 +12,15 @@
         <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
-
-        <div class="row">
-            <h2>Login</h2>
-            <form action="../Includes/login.inc.php" method="post">
-                <input type="text" name="uid" placeholder="Username">
-                <input type="text" name="pwd" placeholder="Password">
-                <button type="submit" name="submit">Log In</button>
-            </form>
+        <div class="rowLogin">
+            <div class="boxStandart boxLogin">
+                <p class="h2">Login</p>
+                <form class="formStandart" action="../Includes/login.inc.php" method="post">
+                    <input type="text" name="uid" placeholder="Username">
+                    <input type="text" name="pwd" placeholder="Password">
+                    <button class="button" type="submit" name="submit">Log In</button>
+                </form>
+            </div>
         </div>
 
         <?php

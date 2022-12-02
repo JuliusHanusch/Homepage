@@ -8,7 +8,6 @@ if (isset($_POST["submit"])){
 
     require_once 'dbh.inc.php';
 
-    // echo "Check3";
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
