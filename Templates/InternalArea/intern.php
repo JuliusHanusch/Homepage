@@ -30,8 +30,9 @@
             </form>
         
         </div> -->
+
         <?php
-            if(isset($_SESSION["useruid"])){
+            if($_SESSION["userRole"] == 'admin'){
                 echo 
                     "<div>
                         <form action='../Includes/createUser.inc.php' method='post'>
@@ -53,6 +54,10 @@
             
             }
         ?>
+<<<<<<< HEAD
+=======
+            
+>>>>>>> adminArea
 
         <?php
             if(isset($_GET["error"])){
