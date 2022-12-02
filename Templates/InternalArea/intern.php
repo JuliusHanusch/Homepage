@@ -30,23 +30,31 @@
             </form>
         
         </div> -->
-        <div>
-            <form action="../Includes/createUser.inc.php" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <br>
-                <input type="text" name="uid" placeholder="Username">
-                <br>
-                <input type="text" name="pwd" placeholder="Password">
-                <br>
-                <input type="text" name="pwdrepeat" placeholder="Repeat Password">
-                <br>
-                <select name="role" placeholder="Role">
-                    <option value="Member">Member</option>
-                </select>
-                <br>
-                <button type="submit" name="submit">Create User</button>
-            </form>
-        </div>
+
+        <?php
+            if(isset($_SESSION["useruid"])){
+                echo 
+                    "<div>
+                        <form action='../Includes/createUser.inc.php' method='post'>
+                            <input type='text' name='name' placeholder='Name'>
+                            <br>
+                            <input type='text' name='uid' placeholder='Username'>
+                            <br>
+                            <input type='text' name='pwd' placeholder='Password'>
+                            <br>
+                            <input type='text' name='pwdrepeat' placeholder='Repeat Password'>
+                            <br>
+                            <select name='role' placeholder='Role'>
+                                <option value='Member'>Member</option>
+                            </select>
+                            <br>
+                            <button type='submit' name='submit'>Create User</button>
+                        </form>
+                    </div>"
+            
+            }
+        ?>
+            
 
         <?php
             if(isset($_GET["error"])){
