@@ -50,7 +50,7 @@
                             <br>
                             <button type='submit' name='submit'>Create User</button>
                         </form>
-                    </div>"
+                    </div>";
             
             }
         ?>
