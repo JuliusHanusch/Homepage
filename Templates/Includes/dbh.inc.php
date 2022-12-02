@@ -1,9 +1,9 @@
 <?php
 
-$serverName = "rdbms.strato.de";
-$dbUsername = "dbu1685182";
-$dbPassword = "310500Database";
-$dbName = "dbs9205526";
+$serverName = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "homepage";
 
 
 

@@ -12,7 +12,7 @@
         <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
-        <div class="rowLogin">
+        <div class="rowFields">
             <div class="boxStandart">
                 <p class="h2">Login</p>
                 <form class="formStandart" action="../Includes/login.inc.php" method="post">

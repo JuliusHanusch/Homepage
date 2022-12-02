@@ -20,22 +20,12 @@
         <a class="link linkHeader" href="../Includes/logout.inc.php?curentSite=julius">Logout</a>
 
         </header>
-        <!-- <div class="">
-            <form action="../Includes/newContent.inc.php method="post"">
-                <input type="text" name="message">
-                <br>
-                <input type="text" name="content">
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-        
-        </div> -->
-
         <?php
             if($_SESSION["userrole"] == 'admin'){
                 echo 
                     "<div class='rowFields'>
                         <div class='boxStandart'>
+                        <p class='h3'>Create new account</p>
                             <form class='formStandart' action='../Includes/createUser.inc.php' method='post'>
                                 <input type='text' name='name' placeholder='Name'>
                                 <input type='text' name='uid' placeholder='Username'>
@@ -73,6 +63,17 @@
                         
                     }
         ?>
+
+         <!-- <div class="">
+            <form action="../Includes/newContent.inc.php method="post"">
+                <input type="text" name="message">
+                <br>
+                <input type="text" name="content">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        
+        </div> -->
 
 
 
