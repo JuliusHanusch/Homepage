@@ -113,7 +113,7 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["userid"] = $uidExists["usersId"];
         $_SESSION["useruid"] = $uidExists["usersUid"];
         $_SESSION["userrole"] = $uidExists["usersRole"];
-        header("location: ../InternalArea/intern.php?error=none");
+        header("location: ../InternalArea/intern.php");
         exit();
     }
 }
