@@ -12,16 +12,13 @@
         <header class="header colorHome headerHome">
             <p class="headline headlineGrey">Meet the Hanuschs</p>
         </header>
-
-        <div class="row">
-            <div class="loginBox">
+        <div class="rowLogin">
+            <div class="boxStandart boxLogin">
                 <p class="h2">Login</p>
-                <form action="../Includes/login.inc.php" method="post">
+                <form class="formStandart" action="../Includes/login.inc.php" method="post">
                     <input type="text" name="uid" placeholder="Username">
-                    <br>
                     <input type="text" name="pwd" placeholder="Password">
-                    <br>
-                    <button type="submit" name="submit">Log In</button>
+                    <button class="button" type="submit" name="submit">Log In</button>
                 </form>
             </div>
         </div>
