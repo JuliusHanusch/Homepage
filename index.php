@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Sources/CSS/containers.css">
         <link rel="stylesheet" type="text/css" href="Sources/CSS/colorsAndDesign.css">
         <link rel="stylesheet" type="text/css" href="Sources/CSS/textStyles.css">

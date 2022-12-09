@@ -1,5 +1,5 @@
-.header {
-    height: 175px;    
+.header{
+    height: 175px;
     box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.67);
     display: flex;
     justify-content: center;
@@ -75,7 +75,6 @@
     justify-content: center;
     width: max-content;
     height: max-content;
-
 }
 
 .formStandart{
@@ -111,8 +110,6 @@
 .footer{
     height: 175px;
     margin-top: 100px;
-    bottom: 0%;
-    position: relative;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
